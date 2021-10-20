@@ -120,8 +120,47 @@ a:hover {
   width: 2px;
   height: 100px;
   transform: translateX(-50%);
-  animation: App-logo-spin infinite 25s linear;
+  /* animation: App-logo-spin infinite 25s linear; */
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 48%, rgba(168, 245, 251, 0) 48%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.login .bullet::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  width: 4px;
+  height: 90px;
+  transform: translateX(-50%);
+  /* animation: App-logo-spin infinite 15s linear; */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 48%, rgba(168, 245, 251, 0) 48%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.login .thumbnail::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #000;
+}
+.login .thumbnail::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 37px;
+  width: 4px;
+  height: 80px;
+  transform: translateX(-50%) rotate(90deg);
+  /* animation: App-logo-spin infinite 5s linear; */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, rgba(168, 245, 251, 0) 48%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }

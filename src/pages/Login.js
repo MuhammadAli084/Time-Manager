@@ -8,6 +8,7 @@ const Login = (props) => {
            <div className="container">
            <div className="col-left">
                <div className="bullet">
+                   <div className="thumbnail"></div>
                <img src="images/time.png" alt="time" />
                </div>
                 <h1>Time Manager</h1>
