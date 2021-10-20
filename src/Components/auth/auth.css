@@ -1,0 +1,115 @@
+.auth-wrapper {
+    max-width: 50%;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.auth-wrapper .auth-inner {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-wrapper .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-wrapper.move {
+    transform: translateX(-100%);
+}
+
+.auth-wrapper.change {
+    transform: translateX(100%);
+}
+
+.auth-wrapper input {
+    height: 50px;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.auth-wrapper input::placeholder {
+    color: rgb(187, 187, 187);
+}
+.auth-wrapper input:active,
+.auth-wrapper input:focus {
+    outline: none;
+    border: none;
+}
+.auth-wrapper input:focus {
+    background-color: #efefef;
+}
+.auth-inner label {
+    margin-bottom: 10px;
+}
+
+.black-btn {
+    border: none;
+    background: #000;
+    color: #fff;
+    line-height: 50px;
+    max-width: 150px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.auth-wrapper .signUp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 30px auto 0;
+}
+
+.auth-wrapper .signIn-btn {
+    max-width: 250px;
+}
+
+.auth-wrapper .signUp-btn:before,
+.auth-wrapper .signUp-btn:after {
+    content: '';
+    position: absolute;
+    width: 41px;
+    height: 1px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.auth-wrapper .signUp-btn:after {
+    left: auto;
+    right: 0;
+}
+
+.auth-wrapper .signUp-btn span,
+.auth-wrapper .signUp-btn button {
+    font-size: 15px;
+    color: #747474;
+    font-weight: 400;
+    display: block;
+    margin-right: 5px;
+}
+.auth-wrapper .signUp-btn button {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
