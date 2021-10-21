@@ -1,7 +1,9 @@
 .header {
     max-width: 400px;
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     background: rgba(255, 255, 255, 0.5);
     padding: 50px 25px 100px;
@@ -15,6 +17,7 @@
     font-weight: 700;
     color: #000;
     font-family: 'Rampart One', cursive;
+    /* animation: bounce infinite 1s linear; */
 }
 .header ul {
     margin-top: 50px;
@@ -28,9 +31,13 @@
     font-weight: 500;
     line-height: 30px;
 }
-.header .title {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    display: block;
-}
+
+/* @keyframes bounce {
+    from {
+      transform: translateY(0) scale(1);
+    }
+  
+    to {
+      transform: translateY(10px) scale(1.05);
+    }
+  } */

@@ -48,8 +48,8 @@ a:hover {
   text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.header h1 {
+  animation: bounce infinite 20s linear;
 }
 
 .App {
@@ -92,14 +92,23 @@ a:hover {
   padding: 120px 0;
   flex-direction: column;
   align-items: center;
+  border-radius: 30px;
 }
 
 .login .col-left h1 {
-  font-size: 50px;
+  font-size: 60px;
   line-height: 1.5;
   color: #000;
   font-weight: bold;
   font-family: 'Rampart One', cursive;
+  margin-bottom: 15px;
+}
+
+.login .col-left p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  line-height: 100%;
 }
 
 .login .col-right {
@@ -120,22 +129,22 @@ a:hover {
   width: 2px;
   height: 100px;
   transform: translateX(-50%);
-  /* animation: App-logo-spin infinite 25s linear; */
+  animation: App-logo-spin infinite 25s linear;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 48%, rgba(168, 245, 251, 0) 48%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.login .bullet::before {
+/* .login .bullet::before {
   content: '';
   position: absolute;
   left: 50%;
   top: 30px;
   width: 4px;
-  height: 90px;
+  height: 92px;
   transform: translateX(-50%);
-  /* animation: App-logo-spin infinite 15s linear; */
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 48%, rgba(168, 245, 251, 0) 48%);
+  animation: App-logo-spin infinite 100s linear;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, rgba(168, 245, 251, 0) 48%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -159,8 +168,16 @@ a:hover {
   width: 4px;
   height: 80px;
   transform: translateX(-50%) rotate(90deg);
-  /* animation: App-logo-spin infinite 5s linear; */
+  animation: App-logo-spin infinite 250s linear;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, rgba(168, 245, 251, 0) 48%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+} */
+
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  outline: none;
+  border: none;
 }

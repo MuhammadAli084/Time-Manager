@@ -12,7 +12,7 @@ const Login = (props) => {
                <img src="images/time.png" alt="time" />
                </div>
                 <h1>Time Manager</h1>
-                <p>.............</p>
+                <p>Choose Your Best.</p>
             </div>
            <div className="col-right">
            <SignUp moveLeft={moveLeft} setMoveLeft={setMoveLeft}/>

@@ -6,6 +6,8 @@
 
 .auth-wrapper .auth-inner {
     background-color: rgba(255, 255, 255, 0.5);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     padding: 0 20px;
     height: 600px;
     display: flex;
@@ -34,17 +36,22 @@
     border-radius: 50px;
     margin-bottom: 20px;
 }
+
 .auth-wrapper input::placeholder {
     color: rgb(187, 187, 187);
 }
+
 .auth-wrapper input:active,
 .auth-wrapper input:focus {
     outline: none;
     border: none;
+    box-shadow: none;
 }
+
 .auth-wrapper input:focus {
     background-color: #efefef;
 }
+
 .auth-inner label {
     margin-bottom: 10px;
 }
@@ -63,6 +70,15 @@
     font-weight: bold;
     margin-top: 20px;
     cursor: pointer;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.black-btn:hover {
+    transform: translateY(-5px);
+    background-color: #000;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.6);
 }
 
 .auth-wrapper .signUp-btn {
@@ -75,34 +91,18 @@
     margin: 30px auto 0;
 }
 
-.auth-wrapper .signIn-btn {
-    max-width: 250px;
-}
-
-.auth-wrapper .signUp-btn:before,
-.auth-wrapper .signUp-btn:after {
-    content: '';
-    position: absolute;
-    width: 41px;
-    height: 1px;
-    background-color: #000;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.auth-wrapper .signUp-btn:after {
-    left: auto;
-    right: 0;
+.auth-wrapper .signUp-btn span {
+    font-size: 14px;
 }
 
 .auth-wrapper .signUp-btn span,
 .auth-wrapper .signUp-btn button {
-    font-size: 15px;
     color: #747474;
     font-weight: 400;
     display: block;
     margin-right: 5px;
 }
+
 .auth-wrapper .signUp-btn button {
     color: #000;
     font-weight: bold;
@@ -112,4 +112,11 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    font-size: 16px;
+}
+
+.auth-wrapper .signUp-btn .btn:focus,
+.auth-wrapper .signUp-btn .btn:active {
+    box-shadow: none;
+    outline: none;
 }

@@ -52,7 +52,7 @@ const SignUp = ({moveLeft,setMoveLeft}) => {
             <Button className="black-btn" type="submit">Sign Up</Button>
           </Form>
           <div className="signUp-btn">
-            <span>Already have account</span>
+            <span>Already registered?</span>
             <Button onClick={() => setMoveLeft(false)}>Sign In</Button>
           </div>
         </div>

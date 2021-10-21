@@ -50,8 +50,8 @@ const [password,setPassword] = useState("");
             <Button className="black-btn" type="submit">Sign In</Button>
           </Form>
           <div className="signUp-btn signIn-btn">
-            <span>New here? </span>
-            <Button onClick={()=> setMoveLeft(true)}>Sign Up</Button>
+            <span>Not registered? </span>
+            <Button onClick={()=> setMoveLeft(true)}>Create an account</Button>
           </div>
         </div>
     </div>

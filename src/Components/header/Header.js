@@ -1,31 +1,36 @@
-import React from "react";
-import "../header/Header.css"
+import React, { useState } from "react";
+import "../header/Header.css";
 import { Link } from "react-router-dom";
+import { Tabs, Tab } from "react-bootstrap";
 
 const Header = () => {
-  const name = localStorage.getItem("name");
+  const [key, setKey] = useState("contact");
   return (
     <div className="header">
       <div className="col-left">
-        <span class="title">{name}</span>
         <h1>Time Manager</h1>
-        <ul>
-          <li>
-            <Link>User</Link>
-          </li>
-          <li>
-            <Link>WorkLog</Link>
-          </li>
-          <li>
-            <Link></Link>
-          </li>
-          <li>
-            <Link></Link>
-          </li>
-        </ul>
+        <Tabs
+          id="controlled-tab-example"
+          defaultActiveKey="profile"
+          activeKey={key}
+          onSelect={(k) => {
+            console.log("key", k);
+            setKey(k);
+          }}
+        >
+          <Tab eventKey="home" title="User">
+            Tab 1 content
+          </Tab>
+          <Tab eventKey="profile" title="WorkLog">
+            Tab 2 content
+          </Tab>
+        </Tabs>
       </div>
       <div className="col-right">
         <Link to="/" onClick={() => localStorage.removeItem("token")}>
+          <span>
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+          </span>
           Log Out
         </Link>
       </div>

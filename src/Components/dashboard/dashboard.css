@@ -1,0 +1,27 @@
+.dashboard {
+    height: 100vh;
+}
+
+.dashboard .message {
+    /* max-width: 740px; */
+    padding: 50px 0 0;
+    margin-left: 450px;
+}
+
+.dashboard .message-title {
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 90px;
+}
+
+.dashboard .message-title .name {
+    font-size: 80px;
+    font-family: 'Permanent Marker', cursive;
+}
+.dashboard .message-title .welcome {
+    display: block;
+}
+.dashboard .message-title .welcome b {
+    font-family: 'Permanent Marker', cursive;
+}
