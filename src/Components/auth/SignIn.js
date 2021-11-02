@@ -10,10 +10,12 @@ const handleSubmit = (event) => {
   event.preventDefault();
   // console.log("value", email);
   // console.log("value", password);
-  axios.post('http://localhost:8000/api/v1/auth/login',{email,password})
+  axios.post('http://34.210.129.167/api/login',{email,password})
   .then((response)=>{
+    console.log(response)
     localStorage.setItem('token',response.data.token);
-    localStorage.setItem("name",response.data.user.name);
+    localStorage.setItem("firstName",response.data.user.firstName);
+    localStorage.setItem("lastName",response.data.user.lastName);
     history.push('/Dashboard');
   })
   .catch((err)=>console.log(err))
